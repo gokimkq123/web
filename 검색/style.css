@@ -1,0 +1,47 @@
+*{padding: 0;margin: 0;}
+#ig{
+   
+    background: url(초고화질_컴퓨터_배경화면_1920x1080-3.jpg) no-repeat;
+    background-size: cover;
+    filter: blur(1.5px);
+    height: 99.99vh;
+}
+.search-box{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box:hover>.search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover>.search-btn{
+    background: white;
+}
+.search-btn{
+    color: #33887d;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-text{
+    border: none;
+    background: transparent;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 1s;
+    line-height: 40px;
+    width: 0px;
+}

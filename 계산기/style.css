@@ -1,0 +1,22 @@
+*{margin: 0;padding: 0;}
+body{
+    background: linear-gradient(to right,#e91e63,#3f51b5);
+    height: 60.56rem;
+}
+.button{
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    font-size: 25px;
+    background: #607d8b;
+    border: none;
+    color: white;
+}
+
+#textview{width: 297px;height: 70px;margin: 2px;color: #607d8b;}
+
+.main{
+    position: absolute;
+    top: 262px;
+    left: 846px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="java.js">
+    <title>계산기</title>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <input type="text" id="textview" style="font-size: 20px;">
+        </form>
+
+        <table>
+            <tr>
+                <td><input class="button" type="button" onclick="clean();" value="C"></td>
+                <td><input class="button" type="button" onclick="oneclean();" value="←"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="+"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="/"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick="input_num(value);" value="1" ></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="2"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="3"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="*"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick="input_num(value);"value="4"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="5"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="6"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="-"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" onclick="input_num(value);"value="7"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="8"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="9"></td>
+                <td rowspan=5><input class="button" type="button" onclick="equal();"value="=" style="height: 146px;"></td>
+            </tr>
+            <tr>
+                <td colspan=2><input class="button" type="button" onclick="input_num(value);"value="0" style="width: 145px;"></td>
+                <td><input class="button" type="button" onclick="input_num(value);"value="."></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        let t=document.getElementById('textview');
+        function input_num(num){
+            t.value += num;
+        }
+        function equal(){
+            t.value = eval(t.value);
+        }
+        function clean(){
+            t.value="";
+        }
+        function oneclean(){
+            t.value=t.value.substring(0,t.value.length-1);
+        }
+    </script>
+</body>
+</html>

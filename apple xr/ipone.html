@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>apple</title>
+</head>
+<body>
+    <div id="dg"></div>
+    <img src="./images/5.png" id="ig">
+
+    <div id="main">
+        <div><h1 class="title">iPhone X🅁 구입하기</h1></div>
+        <div class="price">\850,000</div>
+    
+        <div class="color-choice">
+            <h3>맘에 드는 마감을 선택하세요.</h3>
+            <form id="form">
+                <input class="button" type="button" onclick="change(5);" value="화이트">
+                <input class="button" type="button" onclick="change(1);" value="블랙" style="width: 94px;"><br>
+                <input class="button" type="button" onclick="change(2);" value="블루" style="width: 100px;">
+                <input class="button" type="button" onclick="change(6);" value="옐로" style="width:94px;"><br>
+                <input class="button" type="button" onclick="change(3);" value="오랜지">
+                <input class="button" type="button" onclick="change(4);" value="레드" style="width: 94px;">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function change(num){
+            let a=document.getElementById('ig');
+
+            a.src="./images/"+num+".png";
+        }
+    </script>
+</body>
+</html>
